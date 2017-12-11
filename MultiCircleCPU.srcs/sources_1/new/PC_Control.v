@@ -33,6 +33,6 @@ module PC_Control(
     assign PC4 = PC_Now+'b100;
     assign Output2=PC4+(Extend_Addr<<2);
     assign Merge_Addr={PC_Now[31:28],J_Addr,1'b0,1'b0};
-    Select_32 Selector(.Opt(PCSrc[0]),.DataA(PC4),.DataB(output2),.DataC(output1));
-    assign PC_Next=(PCSrc[1]==1'b0 ? Output1 : Merge_Addr);
+    Select_32 Selector(.Opt(PCSrc[0]),.DataA(PC4),.DataB(output2),.DataC(Output1));
+    assign PC_next=(PCSrc[1]==1'b0 ? PC4 : Merge_Addr);
 endmodule

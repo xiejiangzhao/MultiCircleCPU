@@ -24,9 +24,10 @@ module CPUTest(
     output reg CLK
     );
     always #5 CLK=~CLK;
+    reg RST;
     //PC
-    wire PCWre,RST,IAddr;
-    wire[31:0] PC_next;
+    wire PCWre;
+    wire[31:0] IAddr,PC_next;
     //PC_Control
     wire[31:0] J_Addr,Extend_Addr;
     wire[1:0] PC_Src;
@@ -38,12 +39,12 @@ module CPUTest(
     wire IRWre;
     //to Sep instruction
     wire[5:0] opcode=IRData[31:26];
-    wire[4:0] rs=IData[25:21];
-    wire[4:0] rt=IData[20:16];
-    wire[4:0] rd=IData[15:11];
-    wire[4:0] sa=IData[10:6];
-    wire[15:0] other=IData[15:0];
-    assign J_Addr=IData[25:0];
+    wire[4:0] rs=IRData[25:21];
+    wire[4:0] rt=IRData[20:16];
+    wire[4:0] rd=IRData[15:11];
+    wire[4:0] sa=IRData[10:6];
+    wire[15:0] other=IRData[15:0];
+    assign J_Addr=IRData[25:0];
     //Write Reg
     wire[1:0] RegDst;
     wire[4:0] WreReg;
@@ -96,9 +97,12 @@ module CPUTest(
     Select_32 ALU_Select2(ALUSrcB,BDRData,Extend_Addr,ALUB);
     ALU ALU_(ALUOp,ALUA,ALUB,Sign,Zero,Result);
     DataMEM DataMEM_(ALUResData,BDRData,RD,WR,DataMEMOut);
-    ControlUnit ControlUnit_(CLK,RST,opcode,Zero,Sign,RegDst,InsMemRW,PCWre,ExtSel,DBDataSrc,WR,ALUSrcB,ALUSrcA,PC_Src,ALUOp,RegWre,RD);
+    wire[2:0] stage,next_stage;
+    ControlUnit ControlUnit_(CLK,RST,opcode,Zero,Sign,PC_Src,RegDst,InsMemRW,PCWre,ExtSel,DBDataSrc,WR,ALUSrcB,ALUSrcA,ALUOp,RegWre,RD,WrRegDSrc,IRWre,stage,next_stage);
     initial
         begin
             CLK=0;
+            RST=0;
+            #20 RST=1;
         end
 endmodule

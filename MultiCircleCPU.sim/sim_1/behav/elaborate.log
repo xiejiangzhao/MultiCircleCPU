@@ -3,12 +3,9 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: E:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto bbf69fb77ebf4ff88e0686f3f8c31019 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPUTest_behav xil_defaultlib.CPUTest xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port DataA [E:/MultiCircleCPU/MultiCircleCPU.srcs/sim_1/new/CPUTest.v:93]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port PC_Now [E:/MultiCircleCPU/MultiCircleCPU.srcs/sim_1/new/CPUTest.v:89]
 WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port DataB [E:/MultiCircleCPU/MultiCircleCPU.srcs/sources_1/new/PC_Control.v:36]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port PC_Now [E:/MultiCircleCPU/MultiCircleCPU.srcs/sim_1/new/CPUTest.v:90]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port IAddr [E:/MultiCircleCPU/MultiCircleCPU.srcs/sim_1/new/CPUTest.v:91]
-WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port RegDst [E:/MultiCircleCPU/MultiCircleCPU.srcs/sim_1/new/CPUTest.v:99]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 26 for port J_Addr [E:/MultiCircleCPU/MultiCircleCPU.srcs/sim_1/new/CPUTest.v:91]
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port RegDst [E:/MultiCircleCPU/MultiCircleCPU.srcs/sim_1/new/CPUTest.v:101]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
