@@ -1,0 +1,29 @@
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto bbf69fb77ebf4ff88e0686f3f8c31019 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPUTest_behav xil_defaultlib.CPUTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port DataA [E:/MultiCircleCPU/MultiCircleCPU.srcs/sim_1/new/CPUTest.v:93]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port PC_Now [E:/MultiCircleCPU/MultiCircleCPU.srcs/sim_1/new/CPUTest.v:89]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port DataB [E:/MultiCircleCPU/MultiCircleCPU.srcs/sources_1/new/PC_Control.v:36]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port PC_Now [E:/MultiCircleCPU/MultiCircleCPU.srcs/sim_1/new/CPUTest.v:90]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port IAddr [E:/MultiCircleCPU/MultiCircleCPU.srcs/sim_1/new/CPUTest.v:91]
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port RegDst [E:/MultiCircleCPU/MultiCircleCPU.srcs/sim_1/new/CPUTest.v:99]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SaveReg
+Compiling module xil_defaultlib.Select_32
+Compiling module xil_defaultlib.Extend
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PC_Control
+Compiling module xil_defaultlib.InsMem
+Compiling module xil_defaultlib.IR
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMEM
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.CPUTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPUTest_behav
