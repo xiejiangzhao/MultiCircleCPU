@@ -35,11 +35,11 @@ input [2:0] ALUOp,
             case(ALUOp)
             3'b000:result=A+B;
             3'b001:result=A-B;
-            3'b010:result=B<<A;
-            3'b011:result=A|B;
-            3'b100:result=A&B;
-            3'b101:result=A<B?1:0;
-            3'b110:
+            3'b100:result=B<<A;
+            3'b101:result=A|B;
+            3'b110:result=A&B;
+            3'b010:result=A<B?1:0;
+            3'b011:
                 begin
                     if(A<B&&(A[31]==B[31]))
                         begin

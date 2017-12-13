@@ -26,7 +26,7 @@ module IR(
     input[31:0] DataIn,
     output reg[31:0] DataOut
     );
-    always@(posedge CLK)
+    always@(negedge CLK)
         begin
             if(IRWre!=0)
                 begin

@@ -23,7 +23,7 @@
 module CPUTest(
     output reg CLK
     );
-    always #5 CLK=~CLK;
+    always #4 CLK=~CLK;
     reg RST;
     //PC
     wire PCWre;
@@ -49,7 +49,7 @@ module CPUTest(
     wire[1:0] RegDst;
     wire[4:0] WreReg;
     wire[4:0] SelectTemp;
-    assign SelectTemp=(RegDst[0]==0)?5'b0:rt;
+    assign SelectTemp=(RegDst[0]==0)?5'b11111:rt;
     assign WreReg=(RegDst[1]==0)?SelectTemp:rd;
     //Write Data
     wire[31:0] DataOut;
@@ -88,10 +88,10 @@ module CPUTest(
     wire ExtSel;
     Extend Extend_(ExtSel,other,Extend_Addr);
     PC PC_(CLK,RST,PCWre,PC_next,IAddr);
-    PC_Control PC_Control_(IAddr,J_Addr,Extend_Addr,PC_Src,PC_next);
+    PC_Control PC_Control_(IAddr,J_Addr,Extend_Addr,DataRed1,PC_Src,PC_next);
     InsMem InsMem_(IAddr,InsMemRW,IData);
     IR IR_(CLK,IRWre,IData,IRData);
-    Select_32 WreDataSelect_(WrRegDSrc,IAddr,DBDROut,DataOut);
+    Select_32 WreDataSelect_(WrRegDSrc,IAddr+'b100,DBDROut,DataOut);
     RegFile RegFile_(CLK,RST,RegWre,rs,rt,WreReg,DataOut,DataRed1,DataRed2);
     Select_32 ALU_Select1(ALUSrcA,ADRData,{27'b0,sa},ALUA);
     Select_32 ALU_Select2(ALUSrcB,BDRData,Extend_Addr,ALUB);
