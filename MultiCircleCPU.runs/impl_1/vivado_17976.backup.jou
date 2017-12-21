@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Wed Dec 20 21:49:45 2017
+# Process ID: 17976
+# Current directory: E:/MultiCircleCPUcopy/MultiCircleCPU.runs/impl_1
+# Command line: vivado.exe -log MultiCircleCPU.vdi -applog -messageDb vivado.pb -mode batch -source MultiCircleCPU.tcl -notrace
+# Log file: E:/MultiCircleCPUcopy/MultiCircleCPU.runs/impl_1/MultiCircleCPU.vdi
+# Journal file: E:/MultiCircleCPUcopy/MultiCircleCPU.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source MultiCircleCPU.tcl -notrace

@@ -33,7 +33,7 @@ module DataMEM(
     assign DataOut[23:16] = (RD==0)?memory[DAddr + 2]:8'bz;
     assign DataOut[15:8] = (RD==0)?memory[DAddr + 1]:8'bz;
     assign DataOut[7:0] = (RD==0)?memory[DAddr ]:8'bz;
-    always@(DAddr or DataIn or RD or WR)
+    always@(negedge WR)
         begin
             if(WR == 0)
                 begin

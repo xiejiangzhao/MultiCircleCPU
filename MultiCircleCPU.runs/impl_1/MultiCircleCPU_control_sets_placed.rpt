@@ -1,0 +1,157 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
+| Date         : Wed Dec 20 21:50:26 2017
+| Host         : DESKTOP-M99K5NK running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MultiCircleCPU_control_sets_placed.rpt
+| Design       : MultiCircleCPU
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   104 |
+| Unused register locations in slices containing registers |    27 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             127 |           64 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              24 |            8 |
+| Yes          | No                    | No                     |             996 |          548 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             626 |          281 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------+---------------------------------+----------------------------+------------------+----------------+
+|               Clock Signal              |          Enable Signal          |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++-----------------------------------------+---------------------------------+----------------------------+------------------+----------------+
+|  Inside_CLK_IBUF_BUFG                   |                                 |                            |                1 |              3 |
+|  ControlUnit_/next_state_reg[3]_i_2_n_0 |                                 |                            |                3 |              4 |
+|  CLK_IBUF_BUFG                          |                                 | RegFile_/SR[0]             |                3 |              4 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[34][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[35][0]_1[0] |                            |                7 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[36][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[37][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[38][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[39][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[40][0]_1[0] |                            |                3 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[41][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[42][0]_4[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[43][0]_1[0] |                            |                7 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[44][0]_1[0] |                            |                3 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[31][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[45][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[46][0]_1[0] |                            |                3 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[47][0]_1[0] |                            |                3 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[48][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[49][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[4][0]_1[0]  |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[50][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[51][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[52][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[53][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[54][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[56][0][0]   |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[57][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[58][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[59][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[5][0]_1[0]  |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[60][0][0]   |                            |                2 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[61][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[62][0][0]   |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[63][0][0]   |                            |                6 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[6][0]_1[0]  |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[7][0]_1[0]  |                            |                3 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[8][0]_1[0]  |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[9][0]_1[0]  |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[1][0]_1[0]  |                            |                3 |              8 |
+| ~WR_BUFG                                | ALUoutDR/E[0]                   |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[0][0]_1[0]  |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[10][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[11][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[12][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[13][0]_1[0] |                            |                3 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[14][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[15][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[16][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[17][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[18][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[19][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[55][0]_3[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[20][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[21][0]_1[0] |                            |                3 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[22][0]_1[0] |                            |                3 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[23][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[24][0]_1[0] |                            |                6 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[25][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[26][0]_1[0] |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[27][0]_1[0] |                            |                6 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[28][0]_1[0] |                            |                3 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[29][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[2][0]_1[0]  |                            |                5 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[30][0]_1[0] |                            |                4 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[32][0]_1[0] |                            |                3 |              8 |
+| ~WR_BUFG                                | ALUoutDR/memory_reg[33][0]_3[0] |                            |                4 |              8 |
+| ~Inside_CLK_IBUF_BUFG                   | RST_IBUF                        | RegFile_/SR[0]             |                5 |             11 |
+|  Inside_CLK_IBUF_BUFG                   |                                 | LEDdisplay_/sel            |                5 |             20 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[17][0]         | RegFile_/SR[0]             |               16 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[0][0]          | RegFile_/SR[0]             |               14 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[10][0]         |                            |               17 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[11][31]        |                            |               12 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[12][0]         |                            |               16 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[13][31]        |                            |               19 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[14][31]        | IR_/register_reg[14][31]_0 |               16 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[15][0]         |                            |               21 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[16][0]         | RegFile_/SR[0]             |               14 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[18][0]_0       | RegFile_/SR[0]             |               14 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[19][0]_2       | RegFile_/SR[0]             |               11 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[1][31]         | RegFile_/SR[0]             |               15 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[20][0]         | RegFile_/SR[0]             |               12 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[21][0]         | RegFile_/SR[0]             |               15 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[22][0]         | RegFile_/SR[0]             |               15 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[23][0]         | RegFile_/SR[0]             |               15 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[24][31]        | IR_/register_reg[24][31]_0 |               17 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[25][0]         |                            |               18 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[26][31]_0      |                            |               15 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[27][0]_0       |                            |               14 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[28][0]_0       |                            |               14 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[29][31]_0      |                            |               24 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[2][0]          | RegFile_/SR[0]             |               15 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[30][31]        |                            |               20 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[31][0]         |                            |               21 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[3][31]         | RegFile_/SR[0]             |               14 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[4][0]          | RegFile_/SR[0]             |               15 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[5][31]         | IR_/register_reg[5][0]     |               15 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[6][0]          | RegFile_/SR[0]             |               14 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[7][0]          | RegFile_/SR[0]             |               14 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[8][0]          |                            |               18 |             32 |
+| ~CLK_IBUF_BUFG                          | IR_/register_reg[9][0]_0        |                            |               26 |             32 |
+| ~CLK_IBUF_BUFG                          | ControlUnit_/IRWre              |                            |               20 |             36 |
+|  CLK_IBUF_BUFG                          | IR_/E[0]                        | RegFile_/SR[0]             |               15 |             39 |
+| ~CLK_IBUF_BUFG                          |                                 |                            |               60 |            120 |
++-----------------------------------------+---------------------------------+----------------------------+------------------+----------------+
+
+

@@ -35,7 +35,7 @@ module RegFile(
     reg [5:0] i;
     assign DataRed1=(register[RegRed1]==0)?0:register[RegRed1];
     assign DataRed2=(register[RegRed2]==0)?0:register[RegRed2];
-    always@(posedge CLK or posedge RST)
+    always@(negedge CLK)
         begin
             if (RST==0) 
                 begin

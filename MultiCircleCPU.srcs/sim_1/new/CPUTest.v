@@ -23,7 +23,7 @@
 module CPUTest(
     output reg CLK
     );
-    always #4 CLK=~CLK;
+    always #3 CLK=~CLK;
     reg RST;
     //PC
     wire PCWre;
@@ -97,7 +97,7 @@ module CPUTest(
     Select_32 ALU_Select2(ALUSrcB,BDRData,Extend_Addr,ALUB);
     ALU ALU_(ALUOp,ALUA,ALUB,Sign,Zero,Result);
     DataMEM DataMEM_(ALUResData,BDRData,RD,WR,DataMEMOut);
-    wire[2:0] stage,next_stage;
+    wire[3:0] stage,next_stage;
     ControlUnit ControlUnit_(CLK,RST,opcode,Zero,Sign,PC_Src,RegDst,InsMemRW,PCWre,ExtSel,DBDataSrc,WR,ALUSrcB,ALUSrcA,ALUOp,RegWre,RD,WrRegDSrc,IRWre,stage,next_stage);
     initial
         begin

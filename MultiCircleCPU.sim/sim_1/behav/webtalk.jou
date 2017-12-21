@@ -2,11 +2,11 @@
 # Webtalk v2016.1 (64-bit)
 # SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
 # IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
-# Start of session at: Wed Dec 13 21:12:31 2017
-# Process ID: 6024
-# Current directory: E:/MultiCircleCPU/MultiCircleCPU.sim/sim_1/behav
-# Command line: wbtcv.exe -mode batch -source E:/MultiCircleCPU/MultiCircleCPU.sim/sim_1/behav/xsim.dir/CPUTest_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: E:/MultiCircleCPU/MultiCircleCPU.sim/sim_1/behav/webtalk.log
-# Journal file: E:/MultiCircleCPU/MultiCircleCPU.sim/sim_1/behav\webtalk.jou
+# Start of session at: Thu Dec 21 08:05:21 2017
+# Process ID: 15084
+# Current directory: E:/MultiCircleCPUcopy/MultiCircleCPU.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source E:/MultiCircleCPUcopy/MultiCircleCPU.sim/sim_1/behav/xsim.dir/CPUTest_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/MultiCircleCPUcopy/MultiCircleCPU.sim/sim_1/behav/webtalk.log
+# Journal file: E:/MultiCircleCPUcopy/MultiCircleCPU.sim/sim_1/behav\webtalk.jou
 #-----------------------------------------------------------
-source E:/MultiCircleCPU/MultiCircleCPU.sim/sim_1/behav/xsim.dir/CPUTest_behav/webtalk/xsim_webtalk.tcl -notrace
+source E:/MultiCircleCPUcopy/MultiCircleCPU.sim/sim_1/behav/xsim.dir/CPUTest_behav/webtalk/xsim_webtalk.tcl -notrace
